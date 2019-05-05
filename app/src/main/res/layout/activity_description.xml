@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#555"
+    android:orientation="vertical"
+    android:layout_margin="20sp"
+    tools:context=".DescriptionActivity">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_gravity="center"
+        android:id="@+id/imgDescription"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/shoes"/>
+
+    <TextView
+        android:id="@+id/tvNameDis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/imgProfile"
+        android:hint="Contact Name"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/tvPriceDis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvNameDis"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/imgCir"
+        android:hint="Phone No"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/tvDescriptionDis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvNameDis"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/imgCir"
+        android:hint="Email "
+        android:textSize="20sp"
+        />
+</LinearLayout>
